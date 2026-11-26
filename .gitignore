@@ -1,0 +1,49 @@
+# ---------------------------------------------------------------
+# UE4.27 + AirSim 项目 .gitignore
+# 目的：只跟踪源码与配置，构建产物、编辑器缓存和大型资产包不入库
+# ---------------------------------------------------------------
+
+# Unreal 构建产物
+Binaries/
+Build/
+Intermediate/
+DerivedDataCache/
+Saved/
+Plugins/*/Binaries/
+Plugins/*/Intermediate/
+Plugins/*/DerivedDataCache/
+
+# Visual Studio / Rider
+.vs/
+*.sln
+*.suo
+*.opensdf
+*.sdf
+*.VC.db
+*.VC.opendb
+*.VC.VC.opendb
+*.user
+*.userprefs
+.idea/
+
+# 调试符号与临时文件
+*.pdb
+*.obj
+*.exp
+*.ilk
+*.tmp
+*.log
+*.cache
+.vsconfig
+
+# 系统文件
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# ---------------------------------------------------------------
+# 工程资产（体积过大，约 8.6 GB，未纳入本仓库）
+# 需要完整工程时请向维护者索取 Content 目录
+# ---------------------------------------------------------------
+Content/*
+!Content/README.md
